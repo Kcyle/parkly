@@ -38,9 +38,9 @@
          <script>
             "use strict";
             window.onload = function() {
-               const map = L.map("map").setView([<%= coords.lat %>;, <%= coords.lon %>;], 16);
+               const map = L.map("map").setView([<%= coords.lat %>, <%= coords.lon %>], 16);
                L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
-               L.marker([<%= coords.lat %>;, <%= coords.lon %>;]).addTo(map);
+               L.marker([<%= coords.lat %>, <%= coords.lon %>]).addTo(map);
             };
          </script>
       <% } %>
