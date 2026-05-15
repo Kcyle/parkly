@@ -6,7 +6,7 @@ App Description: Parkly lets people rent out their driveway for parking during g
 
 YouTube Video Link: https://youtu.be/HoCfh4TujYQ
 
-APIs: Open-Meteo Forecast API (https://open-meteo.com/), Open-Meteo Geocoding API (https://open-meteo.com/en/docs/geocoding-api), Nominatim Geocoding API (https://nominatim.org/)
+APIs: Open-Meteo Forecast API (https://open-meteo.com/), Nominatim Geocoding API (https://nominatim.org/)
 
 Contact Email: kcyle@terpmail.umd.edu
 
