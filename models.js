@@ -22,5 +22,6 @@ const bookingSchema = new mongoose.Schema({
 
 const Spot = mongoose.model("Spot", spotSchema);
 const Booking = mongoose.model("Booking", bookingSchema);
-
-module.exports = { Spot, Booking };
+module.exports = { 
+   Spot, 
+   Booking };
