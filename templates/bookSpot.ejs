@@ -13,7 +13,9 @@
 <body>
    <div id="page">
       <h1><a href="/">Parkly</a></h1>
+
       <h2><%= spot.address %></h2>
+
       <p>
          City: <%= spot.city %><br>
          Price: $<%= spot.price %> / hr<br>
@@ -36,11 +38,9 @@
          <script>
             "use strict";
             window.onload = function() {
-               const lat = <%= coords.lat %>;
-               const lon = <%= coords.lon %>;
-               const map = L.map("map").setView([lat, lon], 16);
+               const map = L.map("map").setView([<%= coords.lat %>;, <%= coords.lon %>;], 16);
                L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
-               L.marker([lat, lon]).addTo(map);
+               L.marker([<%= coords.lat %>;, <%= coords.lon %>;]).addTo(map);
             };
          </script>
       <% } %>
@@ -59,6 +59,7 @@
          <input type="submit" value="Book">
       </form>
       <br>
+
       <a href="/spots">Back to spots</a>
    </div>
 </body>
